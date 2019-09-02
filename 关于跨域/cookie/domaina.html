@@ -1,0 +1,26 @@
+<!--
+ * @Description: 将页面的cookie共享给b页面
+ * @Author: wangyi
+ * @Date: 2019-09-01 19:27:13
+ * @LastEditTime: 2019-09-01 19:45:30
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>设置documentDomain</title>
+</head>
+
+<body>
+  <p>这里是a页面</p>
+  <script>
+    document.domain = "127.0.0.1";
+    document.cookie = "result=hello";
+  </script>
+</body>
+
+</html>

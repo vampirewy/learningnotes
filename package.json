@@ -1,0 +1,21 @@
+{
+  "name": "learningnotes",
+  "version": "1.0.0",
+  "description": "<!--  * @Description: Read Me  * @Author: wangyi  * @Date: 2019-08-31 15:49:59  * @LastEditTime: 2019-08-31 15:54:58  * @LastEditors: Please set LastEditors  -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:jsonp": "supervisor 关于跨域/jsonp/server/index.js",
+    "start:simple": "supervisor 关于跨域/simpleornotsimpleajax/server/simpleIndex.js",
+    "start:notsimple": "supervisor 关于跨域/simpleornotsimpleajax/server/notsimple.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "koa": "^2.8.1",
+    "koa-router": "^7.4.0",
+    "supervisor": "^0.12.0"
+  }
+}

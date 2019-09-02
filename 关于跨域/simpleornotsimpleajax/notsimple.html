@@ -1,0 +1,47 @@
+<!--
+ * @Description: 简单请求
+ * @Author: wangyi
+ * @Date: 2019-08-31 22:55:44
+ * @LastEditTime: 2019-09-02 10:15:10
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>非简单请求</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+  <p>这里是一个非简单请求</p>
+  <p class="text"></p>
+  <button class="btn">发送请求</button>
+  <script>
+    $('.btn').click(() => {
+      console.log('点击了');
+      $.ajax({
+        type: 'post',
+        url: 'http://127.0.0.1:3000/simplePost',
+        headers: {
+          //contemt-type内容超过
+          // 1.application/x-www-form-urlencoded
+          // 2.application/multipart/form-data
+          // 3.text/plain
+          "Content-Type": "application/json"
+        },
+        success: (res) => {
+          $('.text').html(JSON.stringify(res));
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

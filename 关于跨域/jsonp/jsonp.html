@@ -1,0 +1,42 @@
+<!--
+ * @Description: 实现jsonp
+ * @Author: wangyi
+ * @Date: 2019-08-31 16:21:11
+ * @LastEditTime: 2019-08-31 22:02:05
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>实现JSONP</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+  <button class="btn">点击我</button>
+  <p class="result"></p>
+  <script>
+    function addScriptEle(src) {
+      let script = document.createElement('script');
+      script.setAttribute("type", "text/javascript");
+      script.setAttribute("id", "ajax");
+      script.src = src;
+      document.body.appendChild(script);
+    }
+    $('.btn').click(() => {
+      addScriptEle('http://127.0.0.1:3000/data?callback=data');
+    });
+
+    function data(res) {
+      console.log('得到的数据是', res);
+      $('.result').html(res.result);
+      $('#ajax').remove();
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!--
+ * @Description: 关于跨域
+ * @Author: wangyi
+ * @Date: 2019-08-31 10:44:58
+ * @LastEditTime: 2019-09-02 14:57:34
+ * @LastEditors: Please set LastEditors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>关于跨域</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>这是是a页面</div>
+  <iframe name="iframe" src="http://127.0.0.1:8081/crossb.html"></iframe>
+  <script>
+    window.onload = () => {
+      let iframe = document.getElementsByTagName('iframe')[0].contentWindow;
+      let obj = {
+        name: 'Jack'
+      };
+      iframe.postMessage(JSON.stringify({
+        key: 'storage',
+        data: obj
+      }), 'http://127.0.0.1:8081');
+    };
+    // document.domain = "127.0.0.1";
+    // document.cookie = "result=123";
+    //iframe加载需要时间， 直接获取为null
+    // window.onload = function () {
+    //   let iframe = window.frames['iframe'];
+    //   let node = iframe.document.getElementById('password');
+    //   console.log('iframe节点的值为', node.value);
+    // }
+  </script>
+</body>
+
+</html>
