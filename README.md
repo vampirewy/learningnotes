@@ -2,7 +2,7 @@
  * @Description: Read Me
  * @Author: wangyi
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2019-09-08 20:35:56
+ * @LastEditTime: 2019-09-13 08:57:31
  * @LastEditors: Please set LastEditors
  -->
 
@@ -12,6 +12,6 @@
 
 - [x] 聊聊跨域那些事
 - [x] 关于变量提升
-- [ ] 函数表达式与声明式的区别
+- [ ] this
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
