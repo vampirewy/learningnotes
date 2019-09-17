@@ -2,7 +2,7 @@
  * @Description:about this
  * @Author: wangyi
  * @Date: 2019-09-13 08:57:58
- * @LastEditTime: 2019-09-13 20:26:18
+ * @LastEditTime: 2019-09-17 17:46:18
  * @LastEditors: Please set LastEditors
  -->
 
@@ -132,3 +132,109 @@
 2. 隐式绑定，即将函数直接定义到对象上或通过引用定义到对象属性上；例：`var obj = {a:2,foo:foo}; obj.foo();`
 3. 显示绑定，通过 call、apply、bind
 4. new 绑定，如果函数里返回对象，那就不返回新对象，直接返回对象
+
+### 测试题
+
+```javascript
+function foo(arg) {
+  this.a = arg;
+  return this;
+}
+var a = foo(1);
+var b = foo(10);
+console.log(a.a); //undefined
+console.log(a); //10
+console.log(b.a); //10
+```
+
+解析：
+
+```javascript
+var a = foo(1) ==> window.a = foo(1) ==> window.a = {window.a = 1;return window;} ==> window.a = window; a.a = window.a.a = window.a = window;
+var b = foo(10) ==> { window.a = 10; return window;} ==> window.b = window; b.a = 10;
+本来a.a = window;现在window.a = 10; a.a ==> undefined
+```
+
+```javascript
+function foo() {
+  getName = function() {
+    console.log(1);
+  };
+  return this;
+}
+foo.getName = function() {
+  console.log(2);
+};
+foo.prototype.getName = function() {
+  console.log(3);
+};
+var getName = function() {
+  console.log(4);
+};
+function getName() {
+  console.log(5);
+}
+
+foo.getName(); // 2
+getName(); //4
+foo().getName(); // 1
+getName(); // 1
+new foo.getName(); //2
+new foo().getName(); //3
+new new foo().getName(); //3
+```
+
+解析：
+
+```javascript
+function foo() {
+  getName = function() {
+    console.log(1);
+  };
+  return this;
+}
+foo.getName = function() {
+  console.log(2);
+};
+foo.prototype.getName = function() {
+  console.log(3);
+};
+// 1.同名函数，函数声明式和表达式均会被提升至当前作用域顶部；
+// 2.表达式变量被提升，值留在原地；
+// 3.所以声明式getName被表达式覆盖，可以无视它；
+var getName = function() {
+  console.log(4);
+};
+function getName() {
+  console.log(5);
+}
+//foo.getName的getName作用foo的属性使用，输出2，没有悬念
+foo.getName(); //2
+
+//函数表达式和声明式的提升引起的问题，输出4
+getName(); //4
+
+// 1.调用第一只函数，函数体内getName = function(){...},这个getName是全局的
+// 2.foo()调用时，返回window,并将getName函数放到全局，覆盖了var getName函数
+// 3.输出1
+foo().getName(); //1
+
+// 1.var getName这只函数被上方foo().getName()覆盖了
+// 2.输出1
+getName(); //1
+
+// 1.调用foo.getName()函数
+// 2.当new时，会返回这个新对象，并绑定this，如果没有返回其他对象的话
+// 3.当前返回2，并与prototype进行连接
+new foo.getName(); //2
+
+// 1. 先调用new foo(),返回this,即新对象，生成实例 var obj = new foo();
+// 2. obj.getName()调用了原型上的getName方法，即foo.prototype.getName;
+// 3.返回3
+new foo().getName(); //3
+
+// 1.先调用new foo()返回一个新对象，即var obj = new foo();
+// 2.new obj.getName();
+// 3.输出3
+new new foo().getName(); //3
+```
