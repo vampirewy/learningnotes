@@ -2,7 +2,7 @@
  * @Description: Read Me
  * @Author: wangyi
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2019-09-13 22:04:22
+ * @LastEditTime: 2019-11-03 16:45:32
  * @LastEditors: Please set LastEditors
  -->
 
@@ -13,5 +13,6 @@
 - [x] 聊聊跨域那些事
 - [x] 关于变量提升
 - [x] 关于 this
+- [x] Docker 安装及 Jenkins 安装
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
