@@ -2,7 +2,7 @@
  * @Description: Read Me
  * @Author: wangyi
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2019-11-03 19:39:33
+ * @LastEditTime: 2020-04-16 10:24:25
  * @LastEditors: Please set LastEditors
  -->
 
@@ -14,6 +14,7 @@
 - [x] 关于变量提升
 - [x] 关于 this
 - [x] Docker 安装及 Jenkins 安装
+- [ ] JavaScript 数据类型
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
