@@ -2,7 +2,7 @@
  * @Description: 目录
  * @Author: wangyi
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-04-24 10:23:13
+ * @LastEditTime: 2020-04-24 16:14:56
  * @LastEditors: Please set LastEditors
  -->
 
@@ -14,5 +14,6 @@
 - [Docker 安装及 Jenkins 镜像安装](<./docker/docker install jenkins.md>)
 - [Jenkins 配置](./jenkinsconfig/jenkinsConfig.md)
 - [zepto 源码整体结构](./zepto/zepto整体结构.md)
-- [zepto 源码 init 方法](./zepto/zepto%20init方法.md)
+- [zepto 源码 init 方法](./zepto/zepto.init方法.md)
+- [zepto 源码 init 里涉及到的工具函数](./zepto/zepto.init里的工具函数.md)
 - [typeof 和 instanceof 的区别](./typeofAndInstanceof/typeof和instanceof的区别.md)
