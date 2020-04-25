@@ -2,7 +2,7 @@
  * @Description: 目录
  * @Author: wangyi
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-04-24 16:14:56
+ * @LastEditTime: 2020-04-25 15:02:55
  * @LastEditors: Please set LastEditors
  -->
 
@@ -16,4 +16,5 @@
 - [zepto 源码整体结构](./zepto/zepto整体结构.md)
 - [zepto 源码 init 方法](./zepto/zepto.init方法.md)
 - [zepto 源码 init 里涉及到的工具函数](./zepto/zepto.init里的工具函数.md)
+- [zepto 源码里的方法](./zepto/zepto源码方法.md)
 - [typeof 和 instanceof 的区别](./typeofAndInstanceof/typeof和instanceof的区别.md)
