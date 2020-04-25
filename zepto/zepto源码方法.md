@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2020-04-25 15:02:45
- * @LastEditTime: 2020-04-25 15:43:14
- * @LastEditors: Please set LastEditors
- * @Description: 方法
- * @FilePath: /learningnotes/zepto/zepto源码方法.md
- -->
-
 # zepto 源码相关方法
 
 ## type 函数，返回数据类型(zepto init 工具函数里有提及)

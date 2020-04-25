@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2020-04-24 10:23:06
- * @LastEditTime: 2020-04-24 16:00:52
- * @LastEditors: Please set LastEditors
- * @Description: init方法
- * @FilePath: /learningnotes/zepto/zepto init方法.md
- -->
-
 # zepto 源码之 init 方法
 
 ```javascript

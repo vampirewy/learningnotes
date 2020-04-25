@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2019-11-03 19:56:52
- * @LastEditTime: 2019-11-03 21:05:26
- * @LastEditors: Please set LastEditors
- * @Description: Jenkins Config
- * @FilePath: /learningnotes/jenkinsconfig/jenkinsConfig.md
- -->
-
 # Jenkins 配置
 
 1. **登录 Jenkins** ![jenkins登录页](img/loginjenkins.png)

@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2019-11-03 15:43:41
- * @LastEditTime: 2019-11-03 19:34:03
- * @LastEditors: Please set LastEditors
- * @Description: Dokcer and Jenkins
- * @FilePath: /learningnotes/docker/docker install jenkins.md
- -->
-
 # 在服务器上安装 Docker 及 Jenkins
 
 ## 目前使用的系统是 阿里云 Ecs CentOS7

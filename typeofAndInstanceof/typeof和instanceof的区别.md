@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2020-04-24 09:46:37
- * @LastEditTime: 2020-04-24 10:18:51
- * @LastEditors: Please set LastEditors
- * @Description: typeof和instanceof的区别
- * @FilePath: /learningnotes/typeofAndInstanceof/typeof和instanceof的区别.md
- -->
-
 # typeof 和 instanceof 的区别
 
 ## typeof
@@ -48,4 +39,12 @@ fun instanceof Function; //true
 fun instanceof Object; //true
 ```
 
-instanceof 其实是跟原型链有关,constructor.prototype 指向的是哪个，左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false
+instanceof 其实是跟原型链有关,constructor.prototype 指向的是哪个，左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false，但是 instanceof 有一个缺点无法判断到底属于哪个实例
+
+## Object.getPrototypeOf
+
+```javascript
+let array = [];
+Object.getPrototypeOf(array) === Array.prototype; //true
+Object.getPrototypeOf(array) === Object.prototype; //false
+```

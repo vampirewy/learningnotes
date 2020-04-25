@@ -2,7 +2,7 @@
  * @Description: Read Me
  * @Author: wangyi
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-04-24 10:20:48
+ * @LastEditTime: 2020-04-25 17:33:11
  * @LastEditors: Please set LastEditors
  -->
 
@@ -15,7 +15,7 @@
 - [x] 关于 this
 - [x] Docker 安装及 Jenkins 安装
 - [x] typeof 和 instanceof 区别
-- [ ] Zepto 源码
+- [x] Zepto 源码
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事

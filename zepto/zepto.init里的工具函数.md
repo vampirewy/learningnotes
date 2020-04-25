@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2020-04-24 16:14:12
- * @LastEditTime: 2020-04-25 14:55:00
- * @LastEditors: Please set LastEditors
- * @Description: init里涉及的工具函数
- * @FilePath: /learningnotes/zepto/zepto init里的工具函数.md
- -->
-
 # zepto.init 相关工具函数
 
 一开局\$.each 方法

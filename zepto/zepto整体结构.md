@@ -1,12 +1,3 @@
-<!--
- * @Author: wangyi
- * @Date: 2020-04-21 16:19:27
- * @LastEditTime: 2020-04-21 17:00:32
- * @LastEditors: Please set LastEditors
- * @Description: Zepto源码
- * @FilePath: /learningnotes/zepto/zepto.md
- -->
-
 # Zepto(version:1.2)源码起步结构
 
 ```javascript

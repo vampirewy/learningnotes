@@ -1,11 +1,3 @@
-<!--
- * @Description:about this
- * @Author: wangyi
- * @Date: 2019-09-13 08:57:58
- * @LastEditTime: 2019-09-17 17:46:18
- * @LastEditors: Please set LastEditors
- -->
-
 # 关于 this 那些事
 
 ## this 是个老生长谈的东西，直接切入正题
@@ -69,7 +61,7 @@
      console.log(this.a + x);
    }
    var obj = {
-     a: 1
+     a: 1,
    };
    foo.call(obj, 1); //2
    ```
@@ -79,7 +71,7 @@
      console.log(this.a + x + y);
    }
    var obj = { a: 1 };
-   var obj1 = function() {
+   var obj1 = function () {
      return foo.apply(obj, arguments);
    };
    var obj2 = obj1(1, 2); //4
@@ -157,18 +149,18 @@ var b = foo(10) ==> { window.a = 10; return window;} ==> window.b = window; b.a 
 
 ```javascript
 function foo() {
-  getName = function() {
+  getName = function () {
     console.log(1);
   };
   return this;
 }
-foo.getName = function() {
+foo.getName = function () {
   console.log(2);
 };
-foo.prototype.getName = function() {
+foo.prototype.getName = function () {
   console.log(3);
 };
-var getName = function() {
+var getName = function () {
   console.log(4);
 };
 function getName() {
@@ -188,21 +180,21 @@ new new foo().getName(); //3
 
 ```javascript
 function foo() {
-  getName = function() {
+  getName = function () {
     console.log(1);
   };
   return this;
 }
-foo.getName = function() {
+foo.getName = function () {
   console.log(2);
 };
-foo.prototype.getName = function() {
+foo.prototype.getName = function () {
   console.log(3);
 };
 // 1.同名函数，函数声明式和表达式均会被提升至当前作用域顶部；
 // 2.表达式变量被提升，值留在原地；
 // 3.所以声明式getName被表达式覆盖，可以无视它；
-var getName = function() {
+var getName = function () {
   console.log(4);
 };
 function getName() {
