@@ -1,11 +1,3 @@
-<!--
- * @Description: 目录
- * @Author: wangyi
- * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-04-25 15:02:55
- * @LastEditors: Please set LastEditors
- -->
-
 # 所有知识的目录
 
 - [关于跨域](./crossDomain/跨域.md)
@@ -17,4 +9,6 @@
 - [zepto 源码 init 方法](./zepto/zepto.init方法.md)
 - [zepto 源码 init 里涉及到的工具函数](./zepto/zepto.init里的工具函数.md)
 - [zepto 源码里的方法](./zepto/zepto源码方法.md)
-- [typeof 和 instanceof 的区别](./typeofAndInstanceof/typeof和instanceof的区别.md)
+- [typeof 和 instanceof 的区别](./typeof和instanceof的区别.md)
+- [0.1+0.2 精度丢失原因](./0.1+0.2为什么精度会丢失.md)
+- [typeof null 等于 object](./typeof%20null%20为什么等于object.md)

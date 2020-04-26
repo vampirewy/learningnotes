@@ -1,11 +1,3 @@
-<!--
- * @Description: Read Me
- * @Author: wangyi
- * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-04-25 17:33:11
- * @LastEditors: Please set LastEditors
- -->
-
 # learningnotes
 
 这是一个系列，主要是对自己的基础知识进行巩固并记录下来，以备之后可以翻阅、查询
@@ -16,6 +8,8 @@
 - [x] Docker 安装及 Jenkins 安装
 - [x] typeof 和 instanceof 区别
 - [x] Zepto 源码
+- [x] 0.1 + 0.2 为什么会精度丢失
+- [x] typeof null == object
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
