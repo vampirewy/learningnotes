@@ -29,9 +29,10 @@
 1. 看如下代码:
 
 ```javascript
-let obj = {};
-let array = [];
-let fun = function () {};
+//这些都是字面量定义
+let obj = {}; // obj.__proto__ --> Object.prototype
+let array = []; // array.__proto__ --> Array.prototype --> Object.prototype
+let fun = function () {}; //fun.__proto__ --> Function.prototype --> Object.prototype
 obj instanceof Object; // true
 array instanceof Array; //true
 array instanceof Object; //true
@@ -39,7 +40,7 @@ fun instanceof Function; //true
 fun instanceof Object; //true
 ```
 
-instanceof 其实是跟原型链有关,constructor.prototype 指向的是哪个，左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false，但是 instanceof 有一个缺点无法判断到底属于哪个实例
+instanceof 其实是跟原型链有关,左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false，但是 instanceof 有一个缺点无法判断到底属于哪个实例
 
 ## Object.getPrototypeOf
 
