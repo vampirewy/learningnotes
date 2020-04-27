@@ -12,3 +12,5 @@
 - [typeof 和 instanceof 的区别](./整理/typeof和instanceof的区别.md)
 - [0.1+0.2 精度丢失原因](./整理/0.1+0.2为什么精度会丢失.md)
 - [typeof null 等于 object](./整理/typeof%20null%20为什么等于object.md)
+- [字符串有长度吗](./整理/字符串长度.md)
+- [为什么对象上的方法可以用在基础类型上](./整理/为什么基础类型可以使用对象上的方法.md)

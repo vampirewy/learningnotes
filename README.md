@@ -10,6 +10,8 @@
 - [x] Zepto 源码
 - [x] 0.1 + 0.2 为什么会精度丢失
 - [x] typeof null == object
+- [x] 字符串有长度吗
+- [x] 对象上的方法为什么可以用在基础类型上
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
