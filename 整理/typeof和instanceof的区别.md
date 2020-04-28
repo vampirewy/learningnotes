@@ -40,7 +40,8 @@ fun instanceof Function; //true
 fun instanceof Object; //true
 ```
 
-instanceof 其实是跟原型链有关,左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false，但是 instanceof 有一个缺点无法判断到底属于哪个实例
+1. instanceof 其实是跟原型链有关,左值是否为右值的实例，如果改变右值的状态(从数组改为对象),那它的 instanceof Array 就会为 false，但是 instanceof 有一个缺点无法判断到底属于哪个实例
+2. 使用 Object.prototype.toString 可以判断对象属于哪个基本类型,返回[object class],class 为对象皆有的私有属性，值分别有:Number,String,Function,Object,Array,比 instanceof 更准确;
 
 ## Object.getPrototypeOf
 
