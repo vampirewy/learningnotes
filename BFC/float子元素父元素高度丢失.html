@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-09 11:12:52
+ * @LastEditTime: 2020-05-09 11:16:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learningnotes/BFC/float子元素父元素高度丢失.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float子元素父元素高度丢失</title>
+  <style>
+    .container {
+      border: 1px solid red;
+      overflow: hidden;
+    }
+
+    .left {
+      height: 200px;
+      width: 100px;
+      background: blue;
+      float: left;
+    }
+
+    .right {
+      float: left;
+      height: 200px;
+      width: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">左</div>
+    <div class="right">右</div>
+  </div>
+</body>
+
+</html>

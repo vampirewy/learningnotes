@@ -1,0 +1,37 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-09 10:26:52
+ * @LastEditTime: 2020-05-09 11:11:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learningnotes/BFC/与float元素不重叠.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>与float元素不重叠</title>
+  <style>
+    .left {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      float: left;
+    }
+
+    .right {
+      height: 500px;
+      background: blue;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left">左</div>
+  <div class="right">右</div>
+</body>
+
+</html>

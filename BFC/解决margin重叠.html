@@ -1,0 +1,46 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-09 10:23:12
+ * @LastEditTime: 2020-05-09 10:26:35
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learningnotes/BFC/bfc.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>解决margin重叠</title>
+  <style>
+    .div1 {
+      height: 200px;
+      background: red;
+      margin-bottom: 30px;
+    }
+
+    .div2 {
+      height: 200px;
+      background: blue;
+      margin-top: 50px;
+      /*  第一种方案
+      display: inline-block;
+      width: 100%; */
+    }
+
+    /* 第二种方案 */
+    .div3 {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1">上</div>
+  <div class="div3">
+    <div class="div2">下</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-09 14:36:39
+ * @LastEditTime: 2020-05-10 19:57:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learningnotes/层叠上下文/层叠上下文.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>层叠上下文</title>
+  <style>
+    p {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+    }
+
+    .a {
+      background-color: red;
+      z-index: 1;
+    }
+
+    .b {
+      background-color: blue;
+      z-index: 2;
+      top: 50px;
+      left: 50px;
+    }
+
+    .c {
+      background-color: green;
+      z-index: 2;
+      top: 100px;
+      left: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="a">a</p>
+    <p class="b">b</p>
+  </div>
+  <div>
+    <p class="c">c</p>
+  </div>
+</body>
+
+</html>
