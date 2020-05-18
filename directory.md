@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-05-18 15:30:25
- * @LastEditors: your name
+ * @LastEditTime: 2020-05-18 15:54:54
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/directory.md
 -->
@@ -24,3 +24,4 @@
 - [字符串有长度吗](./整理/字符串长度.md)
 - [为什么对象上的方法可以用在基础类型上](./整理/为什么基础类型可以使用对象上的方法.md)
 - [作用域](./整理/作用域.md)
+- [闭包](./整理/闭包.md)
