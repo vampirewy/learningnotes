@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-05-18 15:55:09
+ * @LastEditTime: 2020-05-20 15:09:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/README.md
@@ -23,6 +23,7 @@
 - [x] 对象上的方法为什么可以用在基础类型上
 - [x] 作用域(作用域、作用域链)相关
 - [x] 闭包
+- [x] 原型
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
