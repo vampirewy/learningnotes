@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-05-22 08:48:26
- * @LastEditTime: 2020-05-24 08:35:21
+ * @LastEditTime: 2020-05-24 10:51:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/react-native踩过的坑.md
@@ -43,3 +43,28 @@
 8. 如果在 Xcode 控制台出现![这些玩意，不影响程序本身](./../image/Xcode控制台出现的不影响程序本身.jpg)，可以在 Product--> Edit Scheme-->Run-->Environment Variables 下添加 OS_ACTIVITY_MODE:disable 即可，就不会出现这些提示了![关闭提示](./../image/Xcode关闭socket%20sp_error提示.jpg)
 
 ## 导入 react-native-vector-icons 坑
+
+1. npm install react-native-vector-icons
+2. 在 tsx 中引入 import Ionicons from 'react-native-vector-icons/Ionicons';后面这个 Ionicons 可以换，附上[github 地址](https://github.com/oblador/react-native-vector-icons)
+3. 打开 Xcode，我的项目是 rnts，选中项目名鼠标右键-->addFiles to 'rnts'--> 选择 rnts 项目下 node_modules/react-native-vector-icons/Fonts-->Add
+4. 找到 Info.plist 文件，添加如下代码
+
+```javascript
+   <key>UIAppFonts</key>
+   <array>
+   <string>Entypo.ttf</string>
+   <string>EvilIcons.ttf</string>
+   <string>FontAwesome.ttf</string>
+   <string>Foundation.ttf</string>
+   <string>Ionicons.ttf</string>
+   <string>MaterialIcons.ttf</string>
+   <string>Octicons.ttf</string>
+   <string>SimpleLineIcons.ttf</string>
+   <string>Zocial.ttf</string>
+   <string>MaterialCommunityIcons.ttf</string>
+   </array>
+```
+
+5. npm 重新跑一遍
+
+**注意：如果还安装了别的包，进入 ios 文件夹后，pod deintegrate 清一波，再 pod install 一波，不然虚拟机会报错(忘了错误名)**
