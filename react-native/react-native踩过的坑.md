@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-05-22 08:48:26
- * @LastEditTime: 2020-05-22 14:09:17
+ * @LastEditTime: 2020-05-24 08:35:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/react-native踩过的坑.md
@@ -41,3 +41,5 @@
 6. ![Tests Target上也要选择Team](./../image/Xcode选择TeamTests文件上.jpg)
 7. 这样就能 run 起来了
 8. 如果在 Xcode 控制台出现![这些玩意，不影响程序本身](./../image/Xcode控制台出现的不影响程序本身.jpg)，可以在 Product--> Edit Scheme-->Run-->Environment Variables 下添加 OS_ACTIVITY_MODE:disable 即可，就不会出现这些提示了![关闭提示](./../image/Xcode关闭socket%20sp_error提示.jpg)
+
+## 导入 react-native-vector-icons 坑
