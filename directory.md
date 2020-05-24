@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-05-20 15:09:16
+ * @LastEditTime: 2020-05-24 10:11:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/directory.md
@@ -26,3 +26,4 @@
 - [作用域](./整理/作用域.md)
 - [闭包](./整理/闭包.md)
 - [原型](./整理/原型.md)
+- [AST](./整理/AST及JS编译原理.md)
