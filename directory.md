@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-06-04 17:33:53
+ * @LastEditTime: 2020-06-22 20:39:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/directory.md
@@ -28,3 +28,4 @@
 - [原型](./整理/原型.md)
 - [AST](./整理/AST及JS编译原理.md)
 - [Event Loop](./整理/Event%20Loop.md)
+- [性能优化,里面涉及到缓存相关内容](./整理/性能优化.md)

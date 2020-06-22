@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-06-04 17:34:05
+ * @LastEditTime: 2020-06-22 20:39:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/README.md
@@ -26,6 +26,7 @@
 - [x] 原型
 - [x] AST
 - [x] Event Loop
+- [x] 性能优化(包含浏览器缓存策略)
 - [ ] Jenkins 配置及部署
 - [ ] 聊聊 XSS CSRF 那些事
 - [ ] webScoket 那些事
