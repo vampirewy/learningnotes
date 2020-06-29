@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-24 09:08:19
- * @LastEditTime: 2020-06-27 19:24:55
+ * @LastEditTime: 2020-06-29 20:48:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/整理/一个URL的请求过程.md
@@ -15,9 +15,30 @@
 
 #### DNS 域名解析
 
-> DNS，全名 Domain Name System，域名系统的英文缩写。将域名与 IP 地址相映射的分布式数据库
+> DNS，全名 Domain Name System，域名系统的英文缩写。将域名与 IP 地址相映射的分布式数据库，方便用户直接输入域名就可以访问网站，无需记住网站对应的 IP 地址。
+
+##### DNS 是多对多的，分如下两种情况
+
+1. 多个域名对应一个 IP(如虚拟机内开辟多块空间，都指向同一个 IP)
+2. 一个域名对应多个 IP(Nginx 的负载均衡)
 
 作用：根据域名查出与之对应的 IP 地址
+
+##### 域名层级
+
+> 域名结构是树状结构，树的最顶端叫根域名；根的下一次叫顶级域名，如.com、.cn、.net 等和.cn、.uk 等国家域组成；像 baidu.com 都是二级域名；简而言之域名是由整体到局部的机制结构。
+> ![域名树状结构](<../image/域名层级(树状结构).png>)
+
+1. 根域名：所有域名的尾部都有根域名。比如 www.aaa.com，真正的域名是 www.aaa.com.root，对于所有域名都是一样，平时一般省略
+2. 顶级域名：如 www.aaa.com 中的.com 就是顶级域名
+3. 二级域名：如 www.aaa.com 中的 aaa 就是二级域名
+4. 三级域名(主机名 host)：如 www.aaa.com 中的 www 就是三级域名；这是用户在服务器上配置的，用户可以任意分配
+
+##### 域名解析流程
+
+##### 递归查询
+
+##### 迭代查询
 
 #### 建立 TCP/IP(面向连接) 连接
 
