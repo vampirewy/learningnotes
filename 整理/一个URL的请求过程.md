@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-24 09:08:19
- * @LastEditTime: 2020-06-29 20:48:47
+ * @LastEditTime: 2020-06-30 15:23:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/整理/一个URL的请求过程.md
@@ -38,7 +38,17 @@
 
 ##### 递归查询
 
+![递归查询](../image/DNS递归查询.png)
+
 ##### 迭代查询
+
+![迭代查询](../image/DNS迭代查询.png)
+
+##### 小结一下 DNS 解析过程
+
+1. 在浏览器中输入想要访问的网站地址时，先会查询本地的 hosts 文件中是否有这个网站对应的 IP 地址，如果存在，就直接调用，解析完成
+2. 如果本地 hosts 文件中不存在，则继续访问本地 DNS 服务器进行查询，如果有，则直接调用，解析完成
+3. 如果不存在，则采用递归或迭代查询的方式进行 DNS 解析，直至完成
 
 #### 建立 TCP/IP(面向连接) 连接
 
