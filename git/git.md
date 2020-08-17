@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-13 11:14:57
+ * @LastEditTime: 2020-08-17 09:29:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -79,4 +79,16 @@ git branch -a
 
 ```javascript
 git branch -vv
+```
+
+#### 查看提交日志
+
+```javascript
+git log
+//只显示提交信息的第一行
+git log --pretty=short
+//显示指定文件提交日志
+git log README.md
+//显示文件的改动
+git log -p 文件名(可以看查这个文件的改动记录)
 ```
