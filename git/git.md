@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-17 09:29:05
+ * @LastEditTime: 2020-08-17 16:43:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -91,4 +91,14 @@ git log --pretty=short
 git log README.md
 //显示文件的改动
 git log -p 文件名(可以看查这个文件的改动记录)
+```
+
+#### cherry-pick 撛选(意义?只是让提交记录更直观?)
+
+```javasrctip
+//只需单个commit id
+git cherry-pick commitId
+//多个commit id
+git cherry-pick commitId1^..commitId100 //等同于从1~100的提交记录
+git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不包头包尾
 ```
