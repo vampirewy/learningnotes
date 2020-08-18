@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-17 16:43:33
+ * @LastEditTime: 2020-08-18 09:16:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -84,6 +84,7 @@ git branch -vv
 #### 查看提交日志
 
 ```javascript
+//查看不了全部的提交记录
 git log
 //只显示提交信息的第一行
 git log --pretty=short
@@ -91,6 +92,10 @@ git log --pretty=short
 git log README.md
 //显示文件的改动
 git log -p 文件名(可以看查这个文件的改动记录)
+//查看更清晰的提交记录
+git log -graph
+//查看所有提交的记录
+git reflog
 ```
 
 #### cherry-pick 撛选(意义?只是让提交记录更直观?)
