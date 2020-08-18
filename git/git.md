@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-18 09:16:24
+ * @LastEditTime: 2020-08-18 09:43:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -56,6 +56,7 @@ git pull --rebase origin master
 
 ```javascript
 git push --set-upstream origin <branchName> //一般与本地同名
+git push -u origin <branchName>
 ```
 
 #### 删除本地分支和远程分支
@@ -93,7 +94,7 @@ git log README.md
 //显示文件的改动
 git log -p 文件名(可以看查这个文件的改动记录)
 //查看更清晰的提交记录
-git log -graph
+git log --graph
 //查看所有提交的记录
 git reflog
 ```
@@ -106,4 +107,11 @@ git cherry-pick commitId
 //多个commit id
 git cherry-pick commitId1^..commitId100 //等同于从1~100的提交记录
 git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不包头包尾
+```
+
+#### 变基
+
+```javascript
+//合并多个提交点，可以去除无意义的提交记录
+git rebase -i
 ```
