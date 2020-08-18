@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-18 09:43:38
+ * @LastEditTime: 2020-08-18 11:33:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -109,7 +109,7 @@ git cherry-pick commitId1^..commitId100 //等同于从1~100的提交记录
 git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不包头包尾
 ```
 
-#### 变基
+#### 压缩历史commitId号
 
 ```javascript
 //合并多个提交点，可以去除无意义的提交记录
