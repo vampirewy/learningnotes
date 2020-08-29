@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-18 11:33:07
+ * @LastEditTime: 2020-08-26 08:57:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -67,7 +67,7 @@ git branch -d <branchName>
 git branch -D <branchName> //删除远程分支后，想删除本地分支需执行 -D
 
 //删除远程分支
-git push --deleta origin <branchName>
+git push --delete origin <branchName>
 ```
 
 #### 查看所有分支
@@ -114,4 +114,25 @@ git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不�
 ```javascript
 //合并多个提交点，可以去除无意义的提交记录
 git rebase -i
+```
+
+#### merge和rebase 提交合并分支
+
+1. git rebase 的目的也是将一个分支的更改并入到另外一个分支中去
+
+```json
+// 如先切换至master,拉取最新的代码，然后切换回自己需要合并的当支，如feature-test1.0-w，再执行下方操作
+git rebase master //默认当前分支
+```
+
+#### 切换分支的时候，创建分支，这个创建的分支会copy上一个切换过来的分支内容
+
+```javasript
+//解决方案 创建并切换分支，拉取远程仓库代码
+//分支 'aaaaa' 设置为跟踪来自 'origin' 的远程分支 'test',并切换到一个新分支 'aaaaa'
+git checkout -b <branchName> origin/<branchName>
+//创建并切换分支，拉取本地仓库代码，后一个是本地另一个仓库，如test
+git checkout -b <branchName> <branchName>h
+//如:分支'aaaaa' 设置为跟踪来自 'origin' 的远程分支 'test'
+git branch <branchhName> origin/<branchName>
 ```
