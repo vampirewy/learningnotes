@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-08-13 10:36:21
+ * @LastEditTime: 2020-08-29 09:31:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/directory.md
@@ -12,7 +12,7 @@
 - [关于跨域](./crossDomain/跨域.md)
 - [关于变量提升](./aboutHoist/变量提升.md)
 - [关于 this](./this/this.md)
-- [Docker 安装及 Jenkins 镜像安装](<./docker/docker install jenkins.md>)
+- [Docker 安装及 Jenkins 镜像安装](./docker/dockerInstallJenkins.md)
 - [Jenkins 配置](./jenkinsconfig/jenkinsConfig.md)
 - [zepto 源码整体结构](./zepto/zepto整体结构.md)
 - [zepto 源码 init 方法](./zepto/zepto.init方法.md)
