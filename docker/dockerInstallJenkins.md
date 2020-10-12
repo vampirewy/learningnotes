@@ -39,4 +39,12 @@
 10. 查看所有的容器 **docker ps -a**
 11. 停止某个容器 **docker stop 容器名称或容器 ID**
 12. 重启某个容器 **docker restart 容器名称或容器 ID**
-13. 删除容器 **docker rm 容器 ID -v**
+13. 删除容器 **docker rm 容器 ID**
+14. 删除镜像 **docker rmi 镜像名**
+15. 查看日志 **docker logs 容器名称/容器ID**
+
+
+docker run -d --name mongo -p 27017:27017 -v /application/mongo/dbconfig:/data/configdb -v /application/mongo/db:/data/db mongo  --auth
+
+db.createUser({ user: 'admin', pwd: '123456', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
+
