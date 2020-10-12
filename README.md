@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-08-29 09:30:32
+ * @LastEditTime: 2020-10-12 10:02:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/README.md
@@ -28,6 +28,7 @@
 - [x] Event Loop
 - [x] 性能优化(包含浏览器缓存策略)
 - [x] Jenkins 配置及部署
+- [x] Mongo 在 Docker 下安装过程
 - [ ] Git
 - [ ] Promise async await
 - [ ] 聊聊 XSS CSRF 那些事
