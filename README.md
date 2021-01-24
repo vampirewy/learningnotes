@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-08-31 15:49:59
- * @LastEditTime: 2020-10-12 10:02:14
+ * @LastEditTime: 2021-01-24 09:52:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/README.md
@@ -29,6 +29,7 @@
 - [x] 性能优化(包含浏览器缓存策略)
 - [x] Jenkins 配置及部署
 - [x] Mongo 在 Docker 下安装过程
+- [x] 微信授权本地项目如何调试
 - [ ] Git
 - [ ] Promise async await
 - [ ] 聊聊 XSS CSRF 那些事

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-09-02 15:47:25
- * @LastEditTime: 2020-10-12 10:03:15
+ * @LastEditTime: 2021-01-24 09:51:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/directory.md
@@ -31,3 +31,4 @@
 - [性能优化,里面涉及到缓存相关内容](./整理/性能优化.md)
 - [Git](./git/git.md)
 - [Mongo](./docker/dockerMongoDB.md)
+- [微信授权本地如何调试](./微信授权本地项目调试/index.md)
