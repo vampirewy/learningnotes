@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2020-08-26 08:57:37
+ * @LastEditTime: 2021-06-20 16:03:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -97,6 +97,8 @@ git log -p 文件名(可以看查这个文件的改动记录)
 git log --graph
 //查看所有提交的记录
 git reflog
+//显示所有历史操作，找到你需要的提交（包括已经被删除的commit记录，git log则不能察看已经删除了的commit记录）
+git log -g
 ```
 
 #### cherry-pick 撛选(意义?只是让提交记录更直观?)
@@ -135,4 +137,23 @@ git checkout -b <branchName> origin/<branchName>
 git checkout -b <branchName> <branchName>h
 //如:分支'aaaaa' 设置为跟踪来自 'origin' 的远程分支 'test'
 git branch <branchhName> origin/<branchName>
+```
+
+#### 文件贮茂
+
+```javascript
+//把本地的修改暂存起来
+git stash 
+//在暂存的时候备注上Message
+git stash save "添加message信息"
+//取出被暂存的文件
+git satsh apply
+//查看现有多少暂存记录(列表)
+git stash list
+//删除所有被暂存的记录
+git stash clear
+//应用最近一次暂存的修改，并删除暂存的记录
+git stash pop
+//删除最新一次的暂存记录
+git stash drop
 ```
