@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2021-06-20 16:03:56
+ * @LastEditTime: 2021-07-01 09:47:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -139,7 +139,7 @@ git checkout -b <branchName> <branchName>h
 git branch <branchhName> origin/<branchName>
 ```
 
-#### 文件贮茂
+#### 文件贮藏
 
 ```javascript
 //把本地的修改暂存起来
@@ -156,4 +156,10 @@ git stash clear
 git stash pop
 //删除最新一次的暂存记录
 git stash drop
+```
+
+#### 撤消修改的文件
+
+```javascript
+git restore <文件名> 或者 .
 ```
