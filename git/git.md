@@ -1,12 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2021-07-01 09:47:48
+ * @LastEditTime: 2021-11-15 11:01:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
 -->
-### Git相关命令行
+
+### Git 相关命令行
 
 #### 克隆
 
@@ -111,14 +112,14 @@ git cherry-pick commitId1^..commitId100 //等同于从1~100的提交记录
 git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不包头包尾
 ```
 
-#### 压缩历史commitId号
+#### 压缩历史 commitId 号
 
 ```javascript
 //合并多个提交点，可以去除无意义的提交记录
 git rebase -i
 ```
 
-#### merge和rebase 提交合并分支
+#### merge 和 rebase 提交合并分支
 
 1. git rebase 的目的也是将一个分支的更改并入到另外一个分支中去
 
@@ -127,7 +128,7 @@ git rebase -i
 git rebase master //默认当前分支
 ```
 
-#### 切换分支的时候，创建分支，这个创建的分支会copy上一个切换过来的分支内容
+#### 切换分支的时候，创建分支，这个创建的分支会 copy 上一个切换过来的分支内容
 
 ```javasript
 //解决方案 创建并切换分支，拉取远程仓库代码
@@ -143,11 +144,11 @@ git branch <branchhName> origin/<branchName>
 
 ```javascript
 //把本地的修改暂存起来
-git stash 
+git stash
 //在暂存的时候备注上Message
 git stash save "添加message信息"
 //取出被暂存的文件
-git satsh apply
+git stash apply git stash apply stash@{取出哪个}
 //查看现有多少暂存记录(列表)
 git stash list
 //删除所有被暂存的记录
@@ -162,4 +163,21 @@ git stash drop
 
 ```javascript
 git restore <文件名> 或者 .
+```
+
+#### 打标签
+
+```javascript
+//本地tag(复杂标签)
+git tag -a <tagname> -m '备注'
+//推送至远程分支
+git push origin <tagname>
+//删除本地tag
+git tag -d <tagname>
+//删除远程tag
+git push origin --delete <tagname>
+//查询
+git tag 
+//具体某一个tag
+git show <tagname>
 ```
