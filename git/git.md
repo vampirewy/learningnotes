@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2021-11-15 11:01:59
+ * @LastEditTime: 2021-11-23 09:36:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -177,7 +177,31 @@ git tag -d <tagname>
 //删除远程tag
 git push origin --delete <tagname>
 //查询
-git tag 
+git tag
 //具体某一个tag
 git show <tagname>
+```
+
+#### 不同项目切换帐号
+
+```javascript
+// 先进入项目
+//查看目前所使用的帐号及邮箱
+git config --list
+//修改使用的姓名及邮箱
+git config user.name "需要写入的名字"
+git config user.email "需要写入的邮箱"
+//再次查看，会发现有两个配置，其中一个是全局的，一个是特殊配置的，优先取下面的:
+git config --list
+
+...
+user.name=原名字
+user.email=原邮箱
+...
+user.name=现名字
+user.email=现邮箱
+...
+
+以上即表示已设置完成
+
 ```
