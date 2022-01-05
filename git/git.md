@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2021-11-23 09:36:03
+ * @LastEditTime: 2022-01-05 11:03:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -204,4 +204,22 @@ user.email=现邮箱
 
 以上即表示已设置完成
 
+```
+
+#### git 仓库迁移
+
+```javascript
+/** 
+* 1. 新建一个空仓库，必须什么文件都没有
+* 2. 找到旧仓库的地址，复制 -- 命令行 git remove -v
+* 3. 克隆旧仓库的版本库，备用
+* 4. 将打包出来的.git文件包，镜像至新仓库
+* 5. 旧仓库 gitlab@github.news.com/groups:test.com.git
+& 6. 新仓库 gitlab@github.xx.com/newgroups:newtest.com.git
+*/
+1. 克隆git版本库，放在电脑哪个目录下都行，备用
+git clone --bare gitlab@github.news.com/groups:test.com.git
+
+2. 以镜像推送的方式上传代码到gitlab服务器上
+git push --mirror gitlab@github.xx.com:newgroups/newtest.com.git
 ```
