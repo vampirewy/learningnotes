@@ -3,7 +3,7 @@
 ## 目前使用的系统是 阿里云 Ecs CentOS7
 
 1. 如果是全新的系统，**首先需要去该实例的网络与安全的安全组添加规则**
-   ![阿里云安全组添加规则](img/aliyunsecurityGroup.png)
+   ![阿里云安全组添加规则](aliyunsecurityGroup.png)
 
 2. 安装 Docker:
 
@@ -11,12 +11,12 @@
    2. 参考菜鸟教程 centos 安装 <https://www.runoob.com/docker/centos-docker-install.html>
 
 3. 检查 Docker 是否安装成功:
-   1. 安装完成后,docker --version, 如果出来![docker版本信息](img/checkdockerversion.png)或者 docker run hello-world(如果没有 hello-world,它会先去拉取),如果出现![试跑hello-world](img/dockerrunhelloworld.png),说明 docker 已经安装成功;
+   1. 安装完成后,docker --version, 如果出来![docker版本信息](checkdockerversion.png)或者 docker run hello-world(如果没有 hello-world,它会先去拉取),如果出现![试跑hello-world](dockerrunhelloworld.png),说明 docker 已经安装成功;
    2. 设置服务器启动时启动 Docker: **systemctl enable docker**
-   3. 查看 Docker 状态: **systemctl status docker** ![查看Docker状态](img/systemctlstatusdocker.png)
+   3. 查看 Docker 状态: **systemctl status docker** ![查看Docker状态](systemctlstatusdocker.png)
    4. 重启服务器 **reboot** 命令
 4. 安装 Jenkins 镜像
-   1. hub.docker.com Docker 镜像官网搜索![jenkins镜像下载](img/downloadjenkinsimage.png)
+   1. hub.docker.com Docker 镜像官网搜索![jenkins镜像下载](downloadjenkinsimage.png)
    2. 下载镜像 **docker pull jenkins/jenkins**
    3. 查看镜像 docker images / 查看某个镜像 docker images | grep jenkins
 5. 创建 Jenkins 挂载目录
@@ -41,10 +41,8 @@
 12. 重启某个容器 **docker restart 容器名称或容器 ID**
 13. 删除容器 **docker rm 容器 ID**
 14. 删除镜像 **docker rmi 镜像名**
-15. 查看日志 **docker logs 容器名称/容器ID**
+15. 查看日志 **docker logs 容器名称/容器 ID**
 
-
-docker run -d --name mongo -p 27017:27017 -v /application/mongo/dbconfig:/data/configdb -v /application/mongo/db:/data/db mongo  --auth
+docker run -d --name mongo -p 27017:27017 -v /application/mongo/dbconfig:/data/configdb -v /application/mongo/db:/data/db mongo --auth
 
 db.createUser({ user: 'admin', pwd: '123456', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
-

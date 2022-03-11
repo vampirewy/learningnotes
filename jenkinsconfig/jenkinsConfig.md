@@ -1,7 +1,7 @@
 <!--
  * @Author: wy
  * @Date: 2019-11-03 19:56:52
- * @LastEditTime: 2021-03-15 14:14:27
+ * @LastEditTime: 2022-03-11 10:53:02
  * @LastEditors: Please set LastEditors
  * @Description:
  * @FilePath: /learningnotes/jenkinsconfig/jenkinsConfig.md
@@ -11,23 +11,23 @@
 
 ## 注意:安装 git
 
-1. **登录 Jenkins** ![jenkins登录页](img/loginjenkins.png)
+1. **登录 Jenkins** ![jenkins登录页](loginjenkins.png)
 2. 首先需要解锁管理员,如果没有挂载过目录，直接去页面上的文件夹获取管理员密码 **cat /var/jenkins_home/secrets/initialAdminPassword**;
 3. 如果挂载过目录则要去 **cat /home/jenkins/secrets/initialAdminPassword**
 4. 输入后,点击 continue,等待....
-5. 插件安装![安装推荐插件](img/installplugins.png)
-6. 插件安装进行中....![插件安装等待中](img/pluginsinstall...png)
-7. 创建管理员![创建管理员](img/createadmin.png),保存并继续..
+5. 插件安装![安装推荐插件](installplugins.png)
+6. 插件安装进行中....![插件安装等待中](pluginsinstall...png)
+7. 创建管理员![创建管理员](createadmin.png),保存并继续..
 8. 实例配置完成,url:服务器 ip 地址+8081，修改端口 vim /etc/sysconfig/jenkins --> JENKINS_PORT=8081，保存，重启 Jenkins
-9. 完成后,进入到主页![主页](img/jenkinsindex.png)
-10. 新增作业![工程](img/createProject-setp1.png)![工程](img/createProject-step2.png)
+9. 完成后,进入到主页![主页](jenkinsindex.png)
+10. 新增作业![工程](createProject-setp1.png)![工程](createProject-step2.png)
 11. 选择仓库
-12. 最后保存![工程](img/createProject-step3.png)
-13. 构建工程![构建](img/buildProject.png)
+12. 最后保存![工程](createProject-step3.png)
+13. 构建工程![构建](buildProject.png)
 
 ## 构建过程中如果提示 npm not found 时，需要在 jenkins 全局设置中添加系统环境变量,先在 liunx 中 echo $PATH 找到地址，复制进去便可
 
-管理 Jenkins --> 系统设定 --> 全域属性中添加![环境变量](img/setPath.png)
+管理 Jenkins --> 系统设定 --> 全域属性中添加![环境变量](setPath.png)
 
 ## Jenkins 系统简体中文设置
 
@@ -70,4 +70,4 @@ ssh-keygen -t rsa -C "your_email@example.com"
 3. 然后会得到 id_rsa 和 id_rsa.pub 两个秘钥文件
 4. 然后打开 id_rsa.pub 文件，复制去 github，setting --> SSH and GPG keys --> new SSH Key
 5. Jenkins 系统管理 --> Manage Credentials(凭证) --> 域(全局) --> 添加凭据
-   ![添加凭据](./img/Add-SSH-KEY.png)
+   ![添加凭据](Add-SSH-KEY.png)

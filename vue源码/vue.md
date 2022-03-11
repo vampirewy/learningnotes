@@ -7,7 +7,7 @@
 ### vue 源码
 
 - 查看 package.json 文件知道 npm run build 对应文件在 scripts 文件夹下的 build.js 中
-- build.js 主要是打包出不同的最终文件![引入同级下的config.js文件导入配置](image/srcipts:build.jpg)
+- build.js 主要是打包出不同的最终文件![引入同级下的config.js文件导入配置](srciptsbuild.jpg)
 - 相关配置文件 config.js
 
 ```javascript
