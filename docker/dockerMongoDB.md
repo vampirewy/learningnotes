@@ -10,6 +10,8 @@
 8. 查看所有 database **show dbs 或者 show databases**
 9. 创建数据库 **use blog**，如果这个库存在则直接切换，如果不存在，则会自动创建
 10. 在 blog 数据库下创建新用户 **db.createUser({ user: 'test', pwd: '123456', roles: [ { role: "readWrite", db: "blog" } ] });**
+11. 创建**use prod_blog**，供正式使用
+12. 在 prod_blog 数据库下创建新用户 **db.createUser({user:'prod',pwd:'123456',roles:[{role:'readWrite',db:'prod_blog'}]})**
 
 ## 用 navicat 无法连接 mongodb 时，报连接超时解决方案
 
