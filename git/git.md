@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2022-09-27 10:57:38
+ * @LastEditTime: 2022-09-27 11:09:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -231,7 +231,7 @@ git push --mirror gitlab@github.xx.com:newgroups/newtest.com.git
 ```javascript
 git rebase <branchhName> /  origin <branchhName>
 
-// 后面不写分支名时， 表示分支名与本地分支同名
+// 后面不写分支名时， 表示分支名与本地分支同名 (git fetch + git rebase)
 git pull --rebase
 // 必须写 origin , 不然会报错 
 git pull --rebase origin <branchhName>
