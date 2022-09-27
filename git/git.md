@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-13 10:35:46
- * @LastEditTime: 2022-01-05 11:03:04
+ * @LastEditTime: 2022-09-27 10:57:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /learningnotes/git/git.md
@@ -58,6 +58,7 @@ git pull --rebase origin master
 ```javascript
 git push --set-upstream origin <branchName> //一般与本地同名
 git push -u origin <branchName>
+git push origin commitId <远程分支名> // 可以只推送指定的commitId到远程
 ```
 
 #### 删除本地分支和远程分支
@@ -104,7 +105,7 @@ git log -g
 
 #### cherry-pick 撛选(意义?只是让提交记录更直观?)
 
-```javasrctip
+```javascript
 //只需单个commit id
 git cherry-pick commitId
 //多个commit id
@@ -116,6 +117,7 @@ git cherry-pick commitId1..commitId100 //等同于从2~100的提交记录，不�
 
 ```javascript
 //合并多个提交点，可以去除无意义的提交记录
+// 可以修改commit message信息 等
 git rebase -i
 ```
 
@@ -209,7 +211,7 @@ user.email=现邮箱
 #### git 仓库迁移
 
 ```javascript
-/** 
+/**
 * 1. 新建一个空仓库，必须什么文件都没有
 * 2. 找到旧仓库的地址，复制 -- 命令行 git remove -v
 * 3. 克隆旧仓库的版本库，备用
@@ -222,4 +224,15 @@ git clone --bare gitlab@github.news.com/groups:test.com.git
 
 2. 以镜像推送的方式上传代码到gitlab服务器上
 git push --mirror gitlab@github.xx.com:newgroups/newtest.com.git
+```
+
+#### git rebase 和 git pull --rebase
+
+```javascript
+git rebase <branchhName> /  origin <branchhName>
+
+// 后面不写分支名时， 表示分支名与本地分支同名
+git pull --rebase
+// 必须写 origin , 不然会报错 
+git pull --rebase origin <branchhName>
 ```
